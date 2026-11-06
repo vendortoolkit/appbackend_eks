@@ -1,0 +1,19 @@
+{
+  "resource": "/userprofile",
+  "path": "/userprofile/",
+  "httpMethod": "GET",
+  "queryStringParameters": { "uid": "52c5a4c4-80c1-708c-b3b6-9b01af6b9f40" },
+  "multiValueQueryStringParameters": {
+    "uid": ["52c5a4c4-80c1-708c-b3b6-9b01af6b9f40"]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "isBase64Encoded": false,
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "2265f424-50a1-7092-3239-838cc7b0d802"
+      }
+    }
+  }
+}

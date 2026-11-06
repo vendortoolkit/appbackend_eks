@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  vendortoolkit-app-api-ebayApiMetadataGetEbayItemSpecData
+Transform:
+- AWS::Serverless-2016-10-31
+- AWS::LanguageExtensions
+
+# Resources declares the AWS resources that you want to include in the stack
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+Resources:
+  # Each Lambda function is defined by properties:
+  # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+  ebayApiMetadataGetEbayItemSpecData:
+    Type: AWS::Serverless::Function
+    Properties:
+      Environment: 
+        Variables:
+{{{ENV_VARS_BLOCK}}}
+      Handler: src/handlers/index.handler
+      Runtime: nodejs24.x
+      Architectures:
+        - x86_64
+      MemorySize: 256
+      Timeout: 10
+      Description: A Lambda function that receives to retreive a users eBay details
+      Role: arn:aws:iam::832635066076:role/vtk_app_lambda
+      Layers:
+{{{LAYER_BLOCK}}}
+      Tags:
+        CostCenter: "VendorToolKit"
+    Metadata:
+      BuildMethod: nodejs24.x
+      BuildCommands:
+        - npm install --omit=dev
+      BuildArchitecture: x86_64
+Globals:
+  Function:
+    Tracing: Active
+  Api:
+    TracingEnabled: true
+
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "messageScheduler",
+  "description": "Called by backend processes",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install js-yaml mustache --save-dev && node ./buildUtils/render_template.js && sam build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.0",
+    "eslint-plugin-n": "^17.21.3",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-import-x": "^4.17.1",
+    "globals": "^16.3.0",
+    "js-yaml": "^4.3.0",
+    "mustache": "^4.2.0"
+  },
+  "dependencies": {
+    "uuid": "^14.0.0"
+  }
+}

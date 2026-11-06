@@ -1,0 +1,70 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  vendortoolkit-cognito-sms
+Transform:
+- AWS::Serverless-2016-10-31
+- AWS::LanguageExtensions
+
+# Resources declares the AWS resources that you want to include in the stack
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
+Resources:
+  # Each Lambda function is defined by properties:
+  # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+  VendorToolKitCognitoSMS:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/index.handler
+      Runtime: nodejs24.x
+      Architectures:
+      - x86_64
+      MemorySize: 128
+      Timeout: 100
+      Description: A Lambda function that processes SMS from Cognito
+      Role: !GetAtt VendorToolKitCognitoSMSRole.Arn
+      Environment:
+        Variables:
+          KEY_ALIAS: vendortoolkit-cognito-sms
+          KEY_ARN: arn:aws:kms:eu-west-1:832635066076:key/471cf7d0-1bd2-447b-8985-706c3862144e
+      Tags:
+        CostCenter: "VendorToolKit"
+
+  # Create a resource policy to allow connection by Cognito
+  VendorToolKitCognitoSMSPolicy:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref VendorToolKitCognitoSMS
+      Principal: "cognito-idp.amazonaws.com"
+
+ # Create lambda policy
+  VendorToolKitCognitoSMSIAMPolicy:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: "VendorToolKit-CognitoSMS-Policy"
+      PolicyDocument:
+        Statement:
+          - Effect: "Allow"    
+            Action: "kms:Decrypt"
+            Resource: "arn:aws:kms:eu-west-1:832635066076:key/471cf7d0-1bd2-447b-8985-706c3862144e"
+      Roles: 
+        - !Ref VendorToolKitCognitoSMSRole
+
+  # Create lambda role
+  VendorToolKitCognitoSMSRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+          Version: "2012-10-17"
+          Statement:
+            - Effect: "Allow"
+              Principal: 
+                Service: "lambda.amazonaws.com"
+              Action: "sts:AssumeRole"
+      ManagedPolicyArns: 
+        - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+# # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Tracing: Active
+  Api:
+    TracingEnabled: true

@@ -1,0 +1,158 @@
+{
+  "resource": "/ebay-pn/hk1-001",
+  "path": "/ebay-pn/hk1-001/",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "*/*",
+    "AeroHC.Unique.TransactionId": "8943653554547766399",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Android-Viewer": "false",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-IOS-Viewer": "false",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Address": "66.135.223.43:64350",
+    "CloudFront-Viewer-ASN": "11643",
+    "CloudFront-Viewer-Country": "US",
+    "CloudFront-Viewer-Country-Name": "United States",
+    "CloudFront-Viewer-HTTP-Version": "1.1",
+    "CloudFront-Viewer-Latitude": "37.75100",
+    "CloudFront-Viewer-Longitude": "-97.82200",
+    "CloudFront-Viewer-Time-Zone": "America/Chicago",
+    "CloudFront-Viewer-TLS": "TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:fullHandshake",
+    "Content-Type": "text/xml;charset=utf-8",
+    "Host": "l6treylia1.execute-api.eu-west-1.amazonaws.com",
+    "SOAPAction": "\"http://developer.ebay.com/notification/ItemRevi\"",
+    "User-Agent": "AsyncHttpClient/2.0.0.ebay.10092020",
+    "Via": "1.1 328dd2fe5da575b92dd6eb47048872fc.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "RSHhZnk71W5VR4akaxG-JaAwETkswoB_qL6lXsPL2OAzupzfFjOopA==",
+    "X-Amzn-Trace-Id": "Root=1-68c9847b-0e9ca5c06d46d99d714503ae",
+    "X-Forwarded-For": "66.135.223.43, 3.172.33.73",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "AeroHC.Unique.TransactionId": [
+      "8943653554547766399"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Android-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-IOS-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-Address": [
+      "66.135.223.43:64350"
+    ],
+    "CloudFront-Viewer-ASN": [
+      "11643"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "CloudFront-Viewer-Country-Name": [
+      "United States"
+    ],
+    "CloudFront-Viewer-HTTP-Version": [
+      "1.1"
+    ],
+    "CloudFront-Viewer-Latitude": [
+      "37.75100"
+    ],
+    "CloudFront-Viewer-Longitude": [
+      "-97.82200"
+    ],
+    "CloudFront-Viewer-Time-Zone": [
+      "America/Chicago"
+    ],
+    "CloudFront-Viewer-TLS": [
+      "TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:fullHandshake"
+    ],
+    "Content-Type": [
+      "text/xml;charset=utf-8"
+    ],
+    "Host": [
+      "l6treylia1.execute-api.eu-west-1.amazonaws.com"
+    ],
+    "SOAPAction": [
+      "\"http://developer.ebay.com/notification/ItemRevised\""
+    ],
+    "User-Agent": [
+      "AsyncHttpClient/2.0.0.ebay.10092020"
+    ],
+    "Via": [
+      "1.1 328dd2fe5da575b92dd6eb47048872fc.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "RSHhZnk71W5VR4akaxG-JaAwETkswoB_qL6lXsPL2OAzupzfFjOopA=="
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-68c9847b-0e9ca5c06d46d99d714503ae"
+    ],
+    "X-Forwarded-For": [
+      "66.135.223.43, 3.172.33.73"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "knhuyg",
+    "resourcePath": "/ebay-pn/hk1-001",
+    "httpMethod": "POST",
+    "extendedRequestId": "RAGjUEHBDoEElYQ=",
+    "requestTime": "16/Sep/2025:15:38:35 +0000",
+    "path": "/test/ebay-pn/hk1-001/",
+    "accountId": "832635066076",
+    "protocol": "HTTP/1.1",
+    "stage": "test",
+    "domainPrefix": "l6treylia1",
+    "requestTimeEpoch": 1758037115268,
+    "requestId": "4958bbd3-406f-4092-b520-fe82241fabab",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "66.135.223.43",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "AsyncHttpClient/2.0.0.ebay.10092020",
+      "user": null
+    },
+    "domainName": "l6treylia1.execute-api.eu-west-1.amazonaws.com",
+    "deploymentId": "44wwya",
+    "apiId": "l6treylia1"
+  },
+  "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n <soapenv:Header>\n  <ebl:RequesterCredentials soapenv:mustUnderstand=\"0\" xmlns:ns=\"urn:ebay:apis:eBLBaseComponents\" xmlns:ebl=\"urn:ebay:apis:eBLBaseComponents\">\n   <ebl:NotificationSignature xmlns:ebl=\"urn:ebay:apis:eBLBaseComponents\">0/0NtiiJ6gcaImoeEg0Y9Q==</ebl:NotificationSignature>\n  </ebl:RequesterCredentials>\n </soapenv:Header>\n <soapenv:Body>\n  <GetItemResponse xmlns=\"urn:ebay:apis:eBLBaseComponents\">\n   <Timestamp>2025-09-16T15:38:34.191Z</Timestamp>\n   <Ack>Success</Ack>\n   <CorrelationID>4266427673041</CorrelationID>\n   <Version>1193</Version>\n   <Build>E1193_CORE_API_19146280_R1</Build>\n   <NotificationEventName>ItemRevised</NotificationEventName>\n   <RecipientUserID>flur-400</RecipientUserID>\n   <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6MDlYCoDJGHpw2dj6x9nY+seQ==</EIASToken>\n   <Item>\n    <AutoPay>false</AutoPay>\n    <BuyerProtection>ItemIneligible</BuyerProtection>\n    <BuyItNowPrice currencyID=\"GBP\">0.0</BuyItNowPrice>\n    <Country>GB</Country>\n    <Currency>GBP</Currency>\n    <Description>&lt;frootemplatename data=&quot;froolib:apps:11310134&quot; /&gt;&lt;frootemplateid data=&quot;froolib:apps:11310134&quot; /&gt;&lt;frootabid data=&quot;14036&quot; /&gt;\n&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\n&lt;br /&gt;\n&lt;!--\nCopyright Â©2025 Frooition Ltd. All rights reserved.\nThe following HTML and CSS Styling may not be used or reproduced in whole or in part, without the prior permission of Frooition, Frooition.\nAll eBay graphics not owned by eBay or eBay associations are the property of the eBay account owner and may not be used without their written authorisation.\nAny person or group of persons found to be in breach of this notice may face legal action.\nfrooapp_port25\n--&gt;\n\n&lt;style type=&quot;text/css&quot;&gt;\n\t#sma_froocredit,\n\t#sma_header,\n\t#sma_imageviewer,\n\t.sma_templatedivider,\n\t#sma_tabs,\n\t#sma_promo,\n\t#sma_footer,\n\t#sma_design,\n\t#sma_seo {\n\t\tdisplay: none;\n\t}\n&lt;/style&gt;\n\n&lt;!-- Dynamic Link to turn expired clients off --&gt;\n&lt;link rel=&apos;stylesheet&apos; type=&apos;text/css&apos; href=&apos;https://c.frooition.com/f3b7b3c4_11310134/frooapps_combined.css&apos; /&gt;\n\n&lt;div id=&quot;sma_background&quot;&gt;\n\t&lt;div id=&quot;sma_froocredit&quot;&gt;&lt;a href=&apos;https://pages.ebay.com/seller-center/listing-and-marketing/third-party-listing-tools.html#frooition&apos; target=&apos;_blank&apos;&gt;\n\t\t\t&lt;div id=&quot;design&quot;&gt;\n\t\t\t\t&lt;div&gt;Powered by &lt;b&gt;Frooition&lt;/b&gt;&lt;/div&gt;\n\t\t\t&lt;/div&gt;\n\t\t&lt;/a&gt;&lt;/div&gt;\n\n\t&lt;div id=&quot;sma_container&quot;&gt;\n\n\t\t&lt;!-- ================ HEADER AREA ================ --&gt;\n\t\t&lt;div id=&quot;sma_header&quot;&gt;\n\t\t\t&lt;div id=&quot;sma_logo&quot;&gt;\n\t\t\t\t&lt;a class=&quot;homelink has-logo&quot; target=&quot;_blank&quot; href=&quot;https://ebay.co.uk/usr/flur-400&quot;&gt;\n\t\t\t\t\t&lt;h1&gt;flur-400&lt;/h1&gt;\n\t\t\t\t&lt;/a&gt;\n\t\t\t&lt;/div&gt;\n\t\t\t&lt;div id=&quot;sma_subheader&quot;&gt;\n\t\t\t&lt;/div&gt;\n\t\t&lt;/div&gt;\n\n\t\t&lt;!-- ================ IMAGE AREA ================ --&gt;\n\t\t&lt;!-- froo image gallery --&gt;\n\t\t&lt;div id=&quot;sma_showcase&quot;&gt;\n\t\t\t&lt;div id=&quot;showcase&quot;&gt;\n\n\t\t\t\t&lt;!-- froo top middle custom box --&gt;\n\t\t\t\t&lt;frootopmiddlecustombox&gt;&lt;/frootopmiddlecustombox&gt;\n\t\t\t\t&lt;!-- end froo top middle custom box --&gt;\n\n\t\t\t\t&lt;!-- froo item title --&gt;\n\t\t\t\t&lt;frooitemtitle&gt;\n\t\t\t\t\t&lt;h3&gt;Raspberry Pi (BROADCOM 1.4GHz) - Single Board Computer (3BPLUS-R)&lt;/h3&gt;\n\t\t\t\t&lt;/frooitemtitle&gt;\n\n\n\n\t\t\t\t&lt;!-- froo image gallery --&gt;\n\t\t\t\t&lt;froogallery&gt;\n&lt;div id=&quot;gallery_outer_1&quot;&gt;\n&lt;div id=&quot;gallery&quot;&gt;\n&lt;div class=&quot;g_image fimage&quot; data=&quot;https://i.ebayimg.com/00/s/MTA4NFgxNTAw/z/VvUAAOSwyn9oRqKd/$_57.JPG?set_id=880000500F&quot; data-layout=&quot;repeatable&quot;&gt;\n&lt;input type=&quot;radio&quot; id=&quot;image-0&quot; autocomplete=&quot;off&quot; name=&quot;image-group&quot; checked&gt;\n&lt;label class=&quot;thumbimage&quot; for=&quot;image-0&quot;&gt;\n&lt;li&gt;&lt;img src=&quot;https://i.ebayimg.com/00/s/MTA4NFgxNTAw/z/VvUAAOSwyn9oRqKd/$_15.JPG?set_id=880000500F&quot;&gt;&lt;/li&gt;\n&lt;/label&gt;\n&lt;input type=&quot;checkbox&quot; id=&quot;mainimage-0&quot; autocomplete=&quot;off&quot; class=&quot;mainimagecb&quot;&gt;\n&lt;label class=&quot;mainimage&quot; for=&quot;mainimage-0&quot;&gt;\n&lt;div&gt;\n&lt;label for=&quot;image--1&quot; class=&quot;leftarrow&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;\n&lt;img src=&quot;https://i.ebayimg.com/00/s/MTA4NFgxNTAw/z/VvUAAOSwyn9oRqKd/$_57.JPG?set_id=880000500F&quot;&gt;\n&lt;label for=&quot;image-1&quot; data-next-image=&quot;&quot; class=&quot;rightarrow&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;\n&lt;/div&gt;\n&lt;/label&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;/div&gt;\n&lt;/froogallery&gt;\n\t\t\t\t&lt;!-- end froo image gallery --&gt;\n\t\t\t&lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;div class=&quot;sma_templatedivider&quot;&gt;&lt;/div&gt;\n\t\t&lt;!-- ================ DESCRIPTION AREA ================ --&gt;\n\n\t\t&lt;div vocab=&quot;https://schema.org/&quot; typeof=&quot;Product&quot;&gt;&lt;span property=&quot;description&quot;&gt;\n\t\t\t\t&lt;div id=&quot;sma_description&quot;&gt;\n\t\t\t\t\t&lt;!-- froo description --&gt;\n\t\t\t\t\t&lt;froodescription&gt;\n\t\t&lt;div id=&quot;description&quot;&gt;\n\t\t&lt;div id=&quot;descriptiontitle&quot;&gt;Item Description&lt;/div&gt;\n\t\t&lt;div id=&quot;descriptioncontent&quot;&gt;\n\t\t\n\t\tThe Raspberry Pi 3 Model B is a single-board computer specifically designed for casual computing. It features a 1.40 GHz processor speed, 1 GB of RAM, integrated Bluetooth and Wi-Fi adapters, and various connectivity options such as USB 1.0/1.1, HDMI, and USB 2.0. This compact hardware is not suitable for intensive computing tasks but offers versatility for everyday use, making it an ideal choice for hobbyists and enthusiasts looking to build their own custom desktop or laptop. The Raspberry Pi 3BPLUS-R is a reliable and efficient option for those looking to enter into the world of DIY computing.\n\t\t\n\t\t&lt;/div&gt;\n\t\t&lt;div id=&quot;descriptionbase&quot;&gt;&lt;/div&gt;\n\t\t&lt;/div&gt;&lt;/froodescription&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t&lt;/span&gt;&lt;/div&gt;\n\t\t&lt;div class=&quot;sma_templatedivider&quot;&gt;&lt;/div&gt;\n\n\n\t\t&lt;!-- ================ TABS AREA ================ --&gt;\n\t\t&lt;div id=&quot;sma_tabs&quot;&gt;\n\t\t\t&lt;!-- froo seller tabs--&gt;\n\t\t\t&lt;frootabs&gt;\n\t\t\t\t&lt;div id=&quot;tabs&quot;&gt;\n\t\t\t\t\t&lt;input type=&quot;radio&quot; id=&quot;tab-1&quot; name=&quot;tab-group-1&quot; checked&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-1&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;About Us&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-1&quot; class=&quot;mobile_tab label-tab-1&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;About Us&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;input type=&quot;radio&quot; id=&quot;tab-2&quot; name=&quot;tab-group-1&quot;&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-2&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Payment&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;input type=&quot;radio&quot; id=&quot;tab-3&quot; name=&quot;tab-group-1&quot;&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-3&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Shipping&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;input type=&quot;radio&quot; id=&quot;tab-4&quot; name=&quot;tab-group-1&quot;&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-4&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Terms&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;input type=&quot;radio&quot; id=&quot;tab-5&quot; name=&quot;tab-group-1&quot;&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-5&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Returns&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;div class=&quot;content content1&quot;&gt;\n\t\t\t\t\t\t&lt;h4 class=&quot;tabtitle&quot;&gt;About Us&lt;/h4&gt;\n\t\t\t\t\t\t&lt;pre class=&quot;tabcontent&quot;&gt;\n\t\t\t\t    &lt;div class=&quot;tab-left&quot;&gt;This is about us&lt;/div&gt;\n\t\t\t\t    &lt;div class=&quot;tab-right&quot;&gt;&lt;/div&gt;\n\t\t\t\t&lt;/pre&gt;\n\t\t\t\t\t\t&lt;div class=&quot;tabbase&quot;&gt;&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-2&quot; class=&quot;mobile_tab label-tab-2&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Payment&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;div class=&quot;content content2&quot;&gt;\n\t\t\t\t\t\t&lt;h4 class=&quot;tabtitle&quot;&gt;Payment&lt;/h4&gt;\n\t\t\t\t\t\t&lt;pre class=&quot;tabcontent&quot;&gt;This is payment&lt;/pre&gt;\n\t\t\t\t\t\t&lt;div class=&quot;tabbase&quot;&gt;&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-3&quot; class=&quot;mobile_tab label-tab-3&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Shipping&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;div class=&quot;content content3&quot;&gt;\n\t\t\t\t\t\t&lt;h4 class=&quot;tabtitle&quot;&gt;Shipping&lt;/h4&gt;\n\t\t\t\t\t\t&lt;pre class=&quot;tabcontent&quot;&gt;This is shipping&lt;/pre&gt;\n\t\t\t\t\t\t&lt;div class=&quot;tabbase&quot;&gt;&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-4&quot; class=&quot;mobile_tab label-tab-4&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Terms&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;div class=&quot;content content4&quot;&gt;\n\t\t\t\t\t\t&lt;h4 class=&quot;tabtitle&quot;&gt;Terms&lt;/h4&gt;\n\t\t\t\t\t\t&lt;pre class=&quot;tabcontent&quot;&gt;This is terms&lt;/pre&gt;\n\t\t\t\t\t\t&lt;div class=&quot;tabbase&quot;&gt;&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t\t&lt;label for=&quot;tab-5&quot; class=&quot;mobile_tab label-tab-5&quot;&gt;\n\t\t\t\t\t\t&lt;li&gt;&lt;a&gt;Returns&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;/label&gt;\n\t\t\t\t\t&lt;div class=&quot;content content5&quot;&gt;\n\t\t\t\t\t\t&lt;h4 class=&quot;tabtitle&quot;&gt;Returns&lt;/h4&gt;\n\t\t\t\t\t\t&lt;pre class=&quot;tabcontent&quot;&gt;This is returns&lt;/pre&gt;\n\t\t\t\t\t\t&lt;div class=&quot;tabbase&quot;&gt;&lt;/div&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t&lt;/frootabs&gt;\n\t\t\t&lt;!-- end froo seller tabs--&gt;\n\t\t\t&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;\n\t\t&lt;/div&gt;\n\n\n\t\t&lt;div class=&quot;sma_templatedivider&quot;&gt;You may also be interested in.....&lt;/div&gt;\n\n\n\t\t&lt;!-- ================ PROMO AREA ================ --&gt;\n\t\t&lt;div id=&quot;sma_promo&quot;&gt;\n\t\t\t&lt;!-- froo cross promotion --&gt;\n\t\t\t&lt;froocrosspromo&gt;&lt;div&gt;&lt;div id=&quot;more_items&quot; class=&quot;boxtitle&quot;&gt;More Items!&lt;/div&gt;&lt;div id=&quot;more_items_content&quot; class=&quot;boxcontent&quot;&gt;&lt;div id=&quot;promobox&quot;&gt;&lt;a id=&quot;promo_default&quot; style=&quot;display:none;&quot; href=&quot;https://stores.ebay.co.uk/&quot; target=&quot;_blank&quot;&gt;View more great items&lt;/a&gt;&lt;a id=&quot;hitem_0&quot; class=&quot;nspromoitem hardpromoitem&quot; style=&quot;display:block;&quot; href=&quot;https://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&amp;item=236307245892&quot; target=&quot;_blank&quot;&gt;&lt;div class=&apos;froopromocontainer&apos;&gt;&lt;div class=&apos;froopromoimg&apos;&gt;&lt;img class=&apos;pimg&apos; src=&apos;https://i.ebayimg.com/00/s/MTA4NFgxNTAw/z/VvUAAOSwyn9oRqKd/$_57.JPG?set_id=880000500F&apos; /&gt;&lt;/div&gt;&lt;div class=&apos;froopromotitle&apos;&gt;Raspberry Pi (BROADCOM 1.4GHz) - Single Board Computer (3BPLUS-R)&lt;/div&gt;&lt;div class=&apos;froopromoprice&apos; data-currconv=&apos;0&apos;&gt;&amp;pound;70.00&lt;/div&gt;&lt;/div&gt;&lt;/a&gt;&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;&lt;div id=&quot;more_items_base&quot; class=&quot;boxbase&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;style&gt;.more-items-wrapper a.nspromoitem { min-height: 210px; }.nspromoitem .froopromocontainer { background-color:#fff; width:100%; padding: 3px; text-align: center; }.nspromoitem .froopromoimg { height: 126px; }#promobox a.nspromoitem img.pimg { max-width: 134px; max-height: 126px; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }.nspromoitem .froopromotitle { color:#333; height:54px; padding: 5px 0px 0px 0px; font-size: 11px; line-height: 12px; overflow:hidden; }.nspromoitem .froopromoprice { color:#333; font-size:18px; font-weight: 700; }.nspromoitem .froopromocontainer:hover .froopromotitle { text-decoration:underline; }&lt;/style&gt;&lt;/froocrosspromo&gt;\n\t\t\t&lt;!-- end froo cross promotion --&gt;\n\t\t\t&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;\n\t\t&lt;/div&gt;\n\n\t\t&lt;div class=&quot;sma_templatedivider&quot;&gt;&lt;/div&gt;\n\n\n\t\t&lt;!-- ================ FOOTER AREA ================ --&gt;\n\t\t&lt;div id=&quot;sma_footer&quot;&gt;&lt;/div&gt;\n\n\t&lt;/div&gt;\n\n\n\t&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div id=&quot;froo_cl&quot;&gt;\n\t&lt;a href=&quot;https://pages.ebay.com/seller-center/listing-and-marketing/third-party-listing-tools.html#frooition&quot; target=&quot;_blank&quot;&gt;\n\t\t&lt;div id=&quot;design&quot;&gt;\n\t\t\t&lt;div&gt;Listed by &lt;b&gt;Frooition&lt;/b&gt;&lt;/div&gt;\n\t\t&lt;/div&gt;\n\t&lt;/a&gt;\n\t&lt;div id=&quot;ns_copyright&quot;&gt;Frooition | No-js Template | eBay design, eBay store design, eBay shop design, eBay template\n\t\tdesign, eBay listing design, eBay Listing Tool (ver:froo_no_js)&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div id=&quot;sma_seo&quot;&gt;Frooition | No-js Template | eBay design, eBay store design, eBay shop design, eBay template design,\n\teBay listing design, eBay Listing Tool (ver:froo_no_js)&lt;/div&gt;</Description>\n    <ItemID>236143082658</ItemID>\n    <ListingDetails>\n     <Adult>false</Adult>\n     <BindingAuction>false</BindingAuction>\n     <CheckoutEnabled>true</CheckoutEnabled>\n     <ConvertedBuyItNowPrice currencyID=\"GBP\">0.0</ConvertedBuyItNowPrice>\n     <ConvertedStartPrice currencyID=\"GBP\">105.0</ConvertedStartPrice>\n     <ConvertedReservePrice currencyID=\"GBP\">0.0</ConvertedReservePrice>\n     <HasReservePrice>false</HasReservePrice>\n     <StartTime>2025-06-09T09:01:47.000Z</StartTime>\n     <EndTime>2025-10-09T09:01:47.000Z</EndTime>\n     <ViewItemURL>https://www.ebay.co.uk/itm/Raspberry-Pi-BROADCOM-1-4GHz-Single-Board-Computer-3BPLUS-R-/236143082658</ViewItemURL>\n     <HasUnansweredQuestions>false</HasUnansweredQuestions>\n     <HasPublicMessages>false</HasPublicMessages>\n     <MinimumBestOfferPrice currencyID=\"GBP\">50.0</MinimumBestOfferPrice>\n     <ViewItemURLForNaturalSearch>https://www.ebay.co.uk/itm/Raspberry-Pi-BROADCOM-1-4GHz-Single-Board-Computer-3BPLUS-R-/236143082658</ViewItemURLForNaturalSearch>\n    </ListingDetails>\n    <ListingDesigner>\n     <LayoutID>310000</LayoutID>\n     <ThemeID>310</ThemeID>\n    </ListingDesigner>\n    <ListingDuration>GTC</ListingDuration>\n    <ListingType>FixedPriceItem</ListingType>\n    <Location>Brierley Hill</Location>\n    <PrimaryCategory>\n     <CategoryID>179</CategoryID>\n     <CategoryName>Computers/Tablets &amp; Networking:Desktops &amp; All-in-Ones:PC Desktops &amp; All-in-Ones</CategoryName>\n    </PrimaryCategory>\n    <PrivateListing>false</PrivateListing>\n    <ProductListingDetails>\n     <IncludeStockPhotoURL>true</IncludeStockPhotoURL>\n     <IncludePrefilledItemInformation>true</IncludePrefilledItemInformation>\n     <UseStockPhotoURLAsGallery>false</UseStockPhotoURLAsGallery>\n     <StockPhotoURL>https://i.ebayimg.com/images/g/qHcAAOSwCmBeQqH9/s-l640.png</StockPhotoURL>\n     <ProductReferenceID>24031180992</ProductReferenceID>\n     <EAN>5060214370165</EAN>\n     <BrandMPN>\n      <Brand>Raspberry Pi</Brand>\n      <MPN>3BPLUSR</MPN>\n     </BrandMPN>\n     <IncludeeBayProductDetails>true</IncludeeBayProductDetails>\n    </ProductListingDetails>\n    <Quantity>1</Quantity>\n    <IsItemEMSEligible>false</IsItemEMSEligible>\n    <ReservePrice currencyID=\"GBP\">0.0</ReservePrice>\n    <ReviseStatus>\n     <ItemRevised>true</ItemRevised>\n    </ReviseStatus>\n    <Seller>\n     <AboutMePage>false</AboutMePage>\n     <Email>flurrish@googlemail.com</Email>\n     <FeedbackScore>0</FeedbackScore>\n     <PositiveFeedbackPercent>0.0</PositiveFeedbackPercent>\n     <FeedbackPrivate>false</FeedbackPrivate>\n     <IDVerified>false</IDVerified>\n     <eBayGoodStanding>true</eBayGoodStanding>\n     <NewUser>false</NewUser>\n     <RegistrationDate>2025-06-09T08:54:46.000Z</RegistrationDate>\n     <Site>UK</Site>\n     <Status>Confirmed</Status>\n     <UserID>flur-400</UserID>\n     <UserIDChanged>false</UserIDChanged>\n     <VATStatus>VATTax</VATStatus>\n     <SellerInfo>\n      <AllowPaymentEdit>true</AllowPaymentEdit>\n      <CheckoutEnabled>true</CheckoutEnabled>\n      <CIPBankAccountStored>false</CIPBankAccountStored>\n      <GoodStanding>true</GoodStanding>\n      <LiveAuctionAuthorized>false</LiveAuctionAuthorized>\n      <MerchandizingPref>OptIn</MerchandizingPref>\n      <QualifiesForB2BVAT>false</QualifiesForB2BVAT>\n      <StoreOwner>false</StoreOwner>\n      <SellerBusinessType>Private</SellerBusinessType>\n      <SafePaymentExempt>false</SafePaymentExempt>\n     </SellerInfo>\n     <MotorsDealer>false</MotorsDealer>\n    </Seller>\n    <SellingStatus>\n     <BidCount>0</BidCount>\n     <BidIncrement currencyID=\"GBP\">0.0</BidIncrement>\n     <ConvertedCurrentPrice currencyID=\"GBP\">105.0</ConvertedCurrentPrice>\n     <CurrentPrice currencyID=\"GBP\">105.0</CurrentPrice>\n     <LeadCount>0</LeadCount>\n     <MinimumToBid currencyID=\"GBP\">105.0</MinimumToBid>\n     <QuantitySold>0</QuantitySold>\n     <ReserveMet>true</ReserveMet>\n     <SecondChanceEligible>false</SecondChanceEligible>\n     <ListingStatus>Active</ListingStatus>\n     <QuantitySoldByPickupInStore>0</QuantitySoldByPickupInStore>\n    </SellingStatus>\n    <ShippingDetails>\n     <ApplyShippingDiscount>false</ApplyShippingDiscount>\n     <SalesTax>\n      <SalesTaxPercent>0.0</SalesTaxPercent>\n      <ShippingIncludedInTax>false</ShippingIncludedInTax>\n     </SalesTax>\n     <ThirdPartyCheckout>false</ThirdPartyCheckout>\n     <ShippingDiscountProfileID>0</ShippingDiscountProfileID>\n     <InternationalShippingDiscountProfileID>0</InternationalShippingDiscountProfileID>\n     <SellerExcludeShipToLocationsPreference>true</SellerExcludeShipToLocationsPreference>\n    </ShippingDetails>\n    <ShipToLocations>None</ShipToLocations>\n    <Site>UK</Site>\n    <StartPrice currencyID=\"GBP\">105.0</StartPrice>\n    <TimeLeft>P22DT17H23M13S</TimeLeft>\n    <Title>Raspberry Pi (BROADCOM 1.4GHz) - Single Board Computer (3BPLUS-R)</Title>\n    <BestOfferDetails>\n     <BestOfferCount>1</BestOfferCount>\n     <BestOfferEnabled>true</BestOfferEnabled>\n     <NewBestOffer>false</NewBestOffer>\n    </BestOfferDetails>\n    <LocationDefaulted>true</LocationDefaulted>\n    <GetItFast>false</GetItFast>\n    <PostalCode>DY5 3NZ</PostalCode>\n    <PictureDetails>\n     <GalleryType>Gallery</GalleryType>\n     <PictureURL>https://i.ebayimg.com/00/s/MTA4NFgxNTAw/z/VvUAAOSwyn9oRqKd/$_57.JPG?set_id=880000500F</PictureURL>\n     <PictureSource>EPS</PictureSource>\n    </PictureDetails>\n    <ProxyItem>false</ProxyItem>\n    <ItemSpecifics>\n     <NameValueList>\n      <Name>MPN</Name>\n      <Value>3BPLUSR</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>SSD Capacity</Name>\n      <Value>Not Applicable</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Most Suitable For</Name>\n      <Value>Casual Computing</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Operating System</Name>\n      <Value>Not Included</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Processor Speed</Name>\n      <Value>1.40 GHz</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Brand</Name>\n      <Value>Raspberry Pi</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Connectivity</Name>\n      <Value>USB 1.0/1.1</Value>\n      <Value>HDMI</Value>\n      <Value>USB 2.0</Value>\n      <Value>Micro-USB</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Graphics Processing Type</Name>\n      <Value>Integrated/On-Board Graphics</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Features</Name>\n      <Value>Built-in Bluetooth Adapter</Value>\n      <Value>Built-in Wi-Fi Adapter</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Screen Size</Name>\n      <Value>None</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>RAM Size</Name>\n      <Value>1 GB</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Type</Name>\n      <Value>Hardware/Electronic</Value>\n      <Source>Product</Source>\n     </NameValueList>\n     <NameValueList>\n      <Name>Model</Name>\n      <Value>3 Model B</Value>\n      <Source>Product</Source>\n     </NameValueList>\n    </ItemSpecifics>\n    <BuyerGuaranteePrice currencyID=\"GBP\">20000.0</BuyerGuaranteePrice>\n    <ReturnPolicy>\n     <ReturnsAcceptedOption>ReturnsNotAccepted</ReturnsAcceptedOption>\n     <ReturnsAccepted>Returns Not Accepted</ReturnsAccepted>\n     <InternationalReturnsAcceptedOption>ReturnsNotAccepted</InternationalReturnsAcceptedOption>\n    </ReturnPolicy>\n    <ConditionID>3000</ConditionID>\n    <ConditionDisplayName>Used</ConditionDisplayName>\n    <PostCheckoutExperienceEnabled>false</PostCheckoutExperienceEnabled>\n    <HideFromSearch>false</HideFromSearch>\n    <eBayPlus>false</eBayPlus>\n    <eBayPlusEligible>false</eBayPlusEligible>\n    <IsSecureDescription>true</IsSecureDescription>\n   </Item>\n  </GetItemResponse>\n </soapenv:Body>\n</soapenv:Envelope>",
+  "isBase64Encoded": false
+}

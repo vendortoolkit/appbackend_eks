@@ -1,0 +1,17 @@
+{
+  "resource": "/payment",
+  "path": "/payment",
+  "httpMethod": "GET",
+  "queryStringParameters":{ "session_id": "cs_test_a1eC1cDIcvtK1IivEAnhEsWh2stLfn2dFBbgJex8XWF8ielyWMazbi6qVd"},
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "",
+  "isBase64Encoded": false,
+    "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}

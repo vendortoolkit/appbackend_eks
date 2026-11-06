@@ -1,0 +1,17 @@
+{
+  "resource": "/state",
+  "path": "/state",
+  "httpMethod": "POST",
+  "queryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{}",
+  "isBase64Encoded": false,
+    "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "52c5a4c4-80c1-708c-b3b6-9b01af6b9f40"
+      }
+    }
+  }
+}

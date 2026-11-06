@@ -1,0 +1,11 @@
+{
+    "directInvoke": [
+        {
+            "userId": "e2b56474-a081-7008-fe07-693c9347e33d",
+            "action": "removePackage",
+            "productId": "prod_TEbBjjeuW3CciA",
+            "startDate": "2026-01-04T17:36:49.769Z",
+            "endDate": "2026-02-04T17:36:49.769Z"
+        }
+    ]
+}

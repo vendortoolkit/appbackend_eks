@@ -1,0 +1,6 @@
+node_modules
+.history
+.aws-sam
+.vscode
+.terraform
+*.zip

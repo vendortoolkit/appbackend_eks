@@ -1,0 +1,9 @@
+{
+"messages": [{
+        "userId": "2265f424-50a1-7092-3239-838cc7b0d802",
+        "msgEventCode": "NEW_ACCOUNT_WELCOME",
+        "msgRequestedDate": "2026-04-03T00:00:00Z",
+        "msgScheduledDate":  "2026-05-12T15:40:01Z",
+        "msgData": {"hasPhoneContact" : false}
+   }]
+}

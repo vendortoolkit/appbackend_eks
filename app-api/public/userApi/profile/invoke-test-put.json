@@ -1,0 +1,17 @@
+{
+  "resource": "/userprofile",
+  "path": "/userprofile/",
+  "httpMethod": "PUT",
+  "queryStringParameters": { "uid": "52c5a4c4-80c1-708c-b3b6-9b01af6b9f40" },
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{\"first_name\":\"Jonathan\",\"last_name\":\"Tranter\",\"company\":\"fgdsfgsdfg\",\"country_iso\":\"GB\",\"address_line1\":\"fgdfgffffff\",\"address_line2\":\"\",\"address_line3\":\"222222£\",\"address_city\":\"33333\",\"address_region\":\"444\",\"address_postalcode\":\"44444\",\"extra_email\":\"flurrish@googlemail.com\",\"msg_account\":\"1\",\"msg_tips\":\"1\"}",
+  "isBase64Encoded": false,
+    "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "52c5a4c4-80c1-708c-b3b6-9b01af6b9f40"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "resource": "/appuser/subscription",
+  "path": "/appuser/subscription",
+  "httpMethod": "GET",
+  "queryStringParameters": { "uid": "e285b414-e0d1-70c4-e332-621afd26605f" },
+  "multiValueQueryStringParameters": {
+    "uid": ["e285b414-e0d1-70c4-e332-621afd26605f"]
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "isBase64Encoded": false,
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e285b414-e0d1-70c4-e332-621afd26605f"
+      }
+    }
+  }
+}

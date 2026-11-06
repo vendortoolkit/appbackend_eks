@@ -1,0 +1,20 @@
+{
+  "resource": "/ebayApi/metadata/getEbayData/category-detail",
+  "path": "/ebayApi/metadata/getEbayData/category-detail",
+  "httpMethod": "GET",
+  "queryStringParameters": {
+    "site_id": "3",
+    "category_id": "9355"
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{}",
+  "isBase64Encoded": false,
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}

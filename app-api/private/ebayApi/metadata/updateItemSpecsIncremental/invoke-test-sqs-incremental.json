@@ -1,0 +1,21 @@
+{
+  "Records": [
+    {
+      "messageId": "7da9f508-0910-416d-81fe-db038f05e95a",
+      "receiptHandle": "AQEBcd7pViOOzoDVXjxU9nSUkb7nyaN+nrQ2RGg6wVYNTRkAUtOoM+vA7znBSER8SeoobuDz2kh9V2rJ2IIRce5uwl5nY5OupkBAQuX5+Tx6BMu+hmiq/b6n52eVOp86QZrUSRO7h1B57nl6bev5HFb4lLUaFUk8M8sacQ6w3US9jimfL3WOssn06qwufu7gQ8AHAssbugncUbTHwnaU1CXnAYFrVz70JIAU2QhDvo0qO8VifeC+RWdY3tn2I7c5PV6yn14oHMZR5acU6xbQvR4EZoUYscfWmyeQDT3o62e5ZPgYbSbeaAcO50F4CUSeVxO+UE3CQSrTAUQeTthTL4JfQjQUqUnR55md8BH3MKXDY6BWmoh5VCg8HLCWdwV5CtJVYaobw2T01FqRKvRi/J8rIQ==",
+      "body": "{ \"action\" : \"incrementalRecacheItemSpecs\", \"s3Key\" : \"15_v20260623_v20260722\", \"added\" : \"2026-07-28T08:06:50.725Z\", \"jobId\" : \"15_123456789_DIFF\" }",
+    "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1744625210154",
+        "SenderId": "AIDAIXMJOPOXYGZZBIYU4",
+        "ApproximateFirstReceiveTimestamp": "1744625214880"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "ce71c5922610a2a830f0a507ac7c0341",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-1:315751945163:boost-traffic-queue",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}
+

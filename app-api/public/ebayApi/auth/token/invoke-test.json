@@ -1,0 +1,20 @@
+{
+  "resource": "/token",
+  "path": "/token",
+  "httpMethod": "GET",
+  "queryStringParameters":{"code":"v^1.1#i^1#f^0#r^1#p^3#I^3#t^Ul41XzEwOjAwODFDMjc5ODBEN0IwNzQ5Rjc0MDc0QkUzQzZBMzUwXzJfMSNFXjEyODQ=",
+  "expires_in":"299",
+  "state":"6137a26c83e593fd64aed0debb73b2a8"
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{}",
+  "isBase64Encoded": false,
+    "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}

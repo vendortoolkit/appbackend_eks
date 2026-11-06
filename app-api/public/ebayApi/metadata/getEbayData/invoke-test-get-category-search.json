@@ -1,0 +1,21 @@
+{
+  "resource": "/ebayApi/metadata/getEbayData/category-search",
+  "path": "/ebayApi/metadata/getEbayData/category-search",
+  "httpMethod": "GET",
+  "queryStringParameters": {
+    "site_id": "3",
+    "q": "phone",
+    "limit": "20"
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{}",
+  "isBase64Encoded": false,
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}

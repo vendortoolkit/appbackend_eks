@@ -1,0 +1,24 @@
+{
+    "version": "1",
+    "triggerSource": "CustomSMSSender_Authentication",
+    "region": "eu-west-1",
+    "userPoolId": "eu-west-1_xkksCTcra",
+    "userName": "82558464-6051-70b6-c20b-5914efb0f413",
+    "callerContext": {
+      "awsSdkVersion": "aws-sdk-unknown-unknown",
+      "clientId": "4mh0miru20ua8uqc71jbik9kan"
+    },
+    "request": {
+      "type": "customEmailSenderRequestV1",
+      "code": "AYADeB7t88BdCmK3HYTiNgnlgcYAgQACABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREEvc2JZdGlidys1cWowUG9BNGRyV0pRVWVSSmRxbStkM0VCNnhsS2Q2eTNsbkw0WDkxWVViMGdCRzlHVzc4M013dz09AAt1c2VycG9vbC1pZAATZXUtd2VzdC0xX3hra3NDVGNyYQABAAdhd3Mta21zAEthcm46YXdzOmttczpldS13ZXN0LTE6ODMyNjM1MDY2MDc2OmtleS80NzFjZjdkMC0xYmQyLTQ0N2ItODk4NS03MDZjMzg2MjE0NGUAuAECAQB4rteGPfLAOV7wY9ZRuCFmYeG3ifXoJw2eUkdxGSssgDAB4ESQO2qwtJKUPLlrBCncjAAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDNjchJlWdEjgPmnhTgIBEIA7jkLd110CmlzLFIUbhrZ2K6p4UvdDn6B388dRvD1NU5EXh78ypBnaadMQ22LxK9Vq3FnM1UaZ9XNn6v4CAAAAAAwAABAAAAAAAAAAAAAAAAAA6A+yqfvx61h+lb+bvRYFMP////8AAAABAAAAAAAAAAAAAAABAAAABgP6qdukFIz8eZVErxlmio8qo7Wh+7YAZzBlAjEAr/GRQfpCiZT3nMyQVokvnlCpkvK7/ywks8H6RFQBfig5zFFVgQN2NprvKM+kPUhzAjA3S9O3n9DTk/TaGsIdjn/8daFY2gnCxA85v0pr2M/sElJGapTmD1726M0/BaURWdU=",
+      "clientMetadata": null,
+      "userAttributes": {
+        "sub": "82558464-6051-70b6-c20b-5914efb0f413",
+        "email_verified": "true",
+        "cognito:user_status": "CONFIRMED",
+        "phone_number_verified": "false",
+        "phone_number": "+447788953892",
+        "email": "jtranter@live.co.uk"
+      }
+    }
+  }

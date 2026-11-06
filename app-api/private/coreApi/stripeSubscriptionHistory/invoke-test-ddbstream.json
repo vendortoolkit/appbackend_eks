@@ -1,0 +1,151 @@
+{
+  "Records": [
+    {
+      "eventID": "79c538ffe5eafa0a3bc67ecef115388b",
+      "eventName": "MODIFY",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "eu-west-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1767459598,
+        "Keys": {
+          "subscription_id": {
+            "S": "sub_1SlALzKtLws6ni2MwIr2uCeM"
+          }
+        },
+        "NewImage": {
+          "subscription_items": {
+            "L": [
+              {
+                "M": {
+                  "amount": {
+                    "N": "1100"
+                  },
+                  "quantity": {
+                    "N": "1"
+                  },
+                  "productId": {
+                    "S": "prod_TEbANaTXAUtcNo"
+                  },
+                  "interval": {
+                    "S": "month"
+                  },
+                  "priceId": {
+                    "S": "price_1SlBDHKtLws6ni2Mca9bIqX7"
+                  }
+                }
+              }
+            ]
+          },
+          "canceled_at": {
+            "NULL": true
+          },
+          "created_at": {
+            "S": "2026-01-02T15:33:25.000Z"
+          },
+          "trial_end": {
+            "S": "2026-02-02T15:34:52.000Z"
+          },
+          "latest_invoice_id": {
+            "S": "in_1SlBDHKtLws6ni2MnSX4mrzs"
+          },
+          "subscription_id": {
+            "S": "sub_1SlALzKtLws6ni2MwIr2uCeM"
+          },
+          "updated_at": {
+            "S": "2026-01-02T16:28:36.347Z"
+          },
+          "user_id": {
+            "S": "e2b56474-a081-7008-fe07-693c9347e33d"
+          },
+          "trial_start": {
+            "S": "2026-01-02T15:33:25.000Z"
+          },
+          "currency": {
+            "S": "gbp"
+          },
+          "checkout_session_id": {
+            "S": "e2b56474-a081-7008-fe07-693c9347e33d#c53daabe-790c-469d-8bbe-c9259926c39f"
+          },
+          "billing_anchor": {
+            "S": "2026-03-03T15:34:52.000Z"
+          },
+          "ended_at": {
+            "NULL": true
+          },
+          "status": {
+            "S": "trialing"
+          }
+        },
+        "OldImage": {
+          "subscription_items": {
+            "L": [
+              {
+                "M": {
+                  "amount": {
+                    "N": "1100"
+                  },
+                  "quantity": {
+                    "N": "1"
+                  },
+                  "productId": {
+                    "S": "prod_TEbANaTXAUtcNo"
+                  },
+                  "interval": {
+                    "S": "month"
+                  },
+                  "priceId": {
+                    "S": "price_1SlBDHKtLws6ni2Mca9bIqX7"
+                  }
+                }
+              }
+            ]
+          },
+          "canceled_at": {
+            "NULL": true
+          },
+          "created_at": {
+            "S": "2026-01-02T15:33:25.000Z"
+          },
+          "trial_end": {
+            "S": "2026-03-02T15:34:52.000Z"
+          },
+          "latest_invoice_id": {
+            "S": "in_1SlBDHKtLws6ni2MnSX4mrzs"
+          },
+          "subscription_id": {
+            "S": "sub_1SlALzKtLws6ni2MwIr2uCeM"
+          },
+          "updated_at": {
+            "S": "2026-01-02T16:28:36.347Z"
+          },
+          "user_id": {
+            "S": "e2b56474-a081-7008-fe07-693c9347e33d"
+          },
+          "trial_start": {
+            "S": "2026-01-02T15:33:25.000Z"
+          },
+          "currency": {
+            "S": "gbp"
+          },
+          "checkout_session_id": {
+            "S": "e2b56474-a081-7008-fe07-693c9347e33d#c53daabe-790c-469d-8bbe-c9259926c39f"
+          },
+          "billing_anchor": {
+            "S": "2026-03-03T15:34:52.000Z"
+          },
+          "ended_at": {
+            "NULL": true
+          },
+          "status": {
+            "S": "trialing"
+          }
+        },
+        "SequenceNumber": "83969800002142207549005487",
+        "SizeBytes": 1179,
+        "StreamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:eu-west-1:832635066076:table/vtk_stripe_subscriptions/stream/2026-01-03T12:14:08.938"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resource": "/payment",
+  "path": "/payment",
+  "httpMethod": "POST",
+  "queryStringParameters":{ "priceId": "price_1SI7xyKtLws6ni2MDH8V2V7y", "quantity": "1", "mode" : "subscription" },
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{ \"priceId\": \"price_1SI7xyKtLws6ni2MDH8V2V7y\", \"productId\": \"prod_TEb9MfIyw1qzi2\", \"quantity\": \"1\", \"mode\" : \"subscription\", \"offerId\": \"Q7HG-92KD-ML3A-Z8X1#2265f424-50a1-7092-3239-838cc7b0d802\", \"hasTrial\": true }",
+  "isBase64Encoded": false,
+    "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}

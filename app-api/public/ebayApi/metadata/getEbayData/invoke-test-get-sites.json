@@ -1,0 +1,17 @@
+{
+  "resource": "/ebayApi/metadata/getEbayData/sites",
+  "path": "/ebayApi/metadata/getEbayData/sites",
+  "httpMethod": "GET",
+  "queryStringParameters": {},
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{}",
+  "isBase64Encoded": false,
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "resource": "/ebayApi/metadata/getEbayData/tree-metadata",
+  "path": "/ebayApi/metadata/getEbayData/tree-metadata",
+  "httpMethod": "GET",
+  "queryStringParameters": {
+    "site_id": "3"
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{}",
+  "isBase64Encoded": false,
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}

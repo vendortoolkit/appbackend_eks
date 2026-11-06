@@ -1,0 +1,20 @@
+{
+  "resource": "/ebayApi/metadata/getEbayData/sub-categories",
+  "path": "/ebayApi/metadata/getEbayData/sub-categories",
+  "httpMethod": "GET",
+  "queryStringParameters": {
+    "site_id": "3",
+    "parent_id": "20081"
+  },
+  "pathParameters": null,
+  "stageVariables": null,
+  "body": "{}",
+  "isBase64Encoded": false,
+  "requestContext": {
+    "authorizer": {
+      "claims": {
+        "sub": "e2b56474-a081-7008-fe07-693c9347e33d"
+      }
+    }
+  }
+}
