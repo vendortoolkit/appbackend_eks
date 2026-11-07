@@ -3,7 +3,7 @@ import express from 'express'
 const app = express()
 const port = 3000
 
-import { ebayAPI } from './ebayApi/index.mjs'
+import { handler as getUserDetails } from './user/getUserDetails/src/handlers/index.mjs'
 
 //Build the object to be compatible with AWS lambda
 const event = {};
@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 
 app.get('/connect', async (req, res) => {
     console.log(res.locals.event)
-     const result = await ebayAPI(res.locals.event)
+     const result = await getUserDetails(res.locals.event)
     res.status(Number(result.statusCode)).set(result.headers).send(result.body)
 })
 
