@@ -1,53 +1,60 @@
 ---
 name: project
-description: Refactor project-related prompts
+description: Migrate public API Lambda entry points to Express Node.js services
 ---
 
-<!-- Tip: Use /create-prompt in chat to generate content with agent assistance -->
+Migrate public HTTP entry points from AWS Lambda to long-running Node.js/Express
+services while preserving the existing handler business logic.
 
-- Refactor project-related prompts to improve clarity and consistency.
-- The project is being updated from a AWS lambda based project to Nodejs project
-- There are 2 main sections private and public
-- Functions in public are accessisible through API gateway
-- Function in private are only accessible through internal methods such as SQS, Eventbridge and are system backend jobs
-- Public: each directory ebayApi, marketingAPI, paymentApi and userApi are the entry points for that API and will be an indivual docker container, i will refer to these directories as serviceRoot
-  - each serviceRoot will have a index.mjs (nodejs app) running express.js
-  - These will forward requests to the subservices inside serviceRoot
-  - For an example of a forwarded service see: ebayApi -> user/getUserDetails
-  - Some APIs will user Get and some will user POST, forward these to the functions
-  - Return any results directly back from the fucntion to browser as headers, body and status
-  - sub will be provided as an Authorization header (standard format)
-  - Any process.env variables should be added to the .env file in each serviceRoot directory, these will be loaded at runtime
-  - in each serviceRoot index.mjs file - which will act as the router, specify each API as a seperate route for readability, but create the event object once and forward it to each route  
-  - Routing: 
-  - routes = [
-  { path = "appuser", parent="/"},
-  { path = "profile", parent="appuser", methods = ["GET", "POST", "PUT", "DELETE"], path = "userapi/profile", authorizer = true},
-  { path = "subscription", parent="appuser", methods = ["GET", "POST", "PUT", "DELETE"],  path = "userapi/subscription", authorizer = true},
-  { path = "ebayauth", parent="/", methods = [], authorizer = true },
-  { path = "token", parent="ebayauth", methods = ["GET","DELETE"], path = "ebayapi/auth/token", authorizer = true },
-  { path = "callback", parent="ebayauth", methods = ["GET"], path = "ebayapi/auth/callback", authorizer = false },
-  { path = "state", parent="ebayauth", methods = ["POST"], path = "ebayapi/auth/state", authorizer = true  },
-  { path = "ebayapi", parent="/", methods = [], lambdaIntegrationName = "", authorizer = true },
-  { path = "user", parent="ebayapi", methods = [], lambdaIntegrationName = "", authorizer = true },
-  { path = "details", parent="user", methods = ["GET"],  path = "ebayapi/user/getUserDetails", authorizer = true },
-  { path = "metadata", parent="ebayapi", methods = [], lambdaIntegrationName = "", authorizer = true },
-  { path = "sites", parent="metadata", methods = ["GET"],  path =  "ebayapi/metadata/getEbayData", authorizer = true },
-  { path = "root-categories", parent="metadata", methods = ["GET"],  path =  "ebayapi/metadata/getEbayData", authorizer = true },
-  { path = "sub-categories", parent="metadata", methods = ["GET"],  path =  "ebayapi/metadata/getEbayData", authorizer = true },
-  { path = "category-search", parent="metadata", methods = ["GET"],  path =  "ebayapi/metadata/getEbayData", authorizer = true },
-  { path = "category-path", parent="metadata", methods = ["GET"],  path =  "ebayapi/metadata/getEbayData", authorizer = true },
-  { path = "category-detail", parent="metadata", methods = ["GET"],  path =  "ebayapi/metadata/getEbayData", authorizer = true },
-  { path = "tree-metadata", parent="metadata", methods = ["GET"],  path =  "ebayapi/metadata/getEbayData", authorizer = true },
-  { path = "ebay-pn", parent="/", methods = [], lambdaIntegrationName = "", authorizer = true },
-  { path = "hk1-001", parent="ebay-pn", methods = ["POST"], path =  "ebayapi/metadata/getEbayData", authorizer = false },
-  { path = "hk2-001", parent="ebay-pn", methods = ["POST"], path = "ebayapi/ebayPlatformNotificationHook", authorizer = false },
-  { path = "hk3-001", parent="ebay-pn", methods = ["POST"], path = "ebayapi/ebayPlatformNotificationHook", authorizer = false },
-  { path = "hk4-001", parent="ebay-pn", methods = ["POST"], path = "ebayapi/ebayPlatformNotificationHook", authorizer = false },
-  { path = "hk5-001", parent="ebay-pn", methods = ["POST"], path = "ebayapi/ebayPlatformNotificationHook", authorizer = false },
-  { path = "payments", parent="/", methods = [], lambdaIntegrationName = "", authorizer = true },
-  { path = "stripeSession", parent="payments", methods = ["GET","POST"], path = "paymentApi/stripeSessionManager", authorizer = true },
-  { path = "stripehooks", parent="/", methods = [], lambdaIntegrationName = "", authorizer = true },
-  { path = "all", parent="stripehooks", methods = ["POST"], path = "paymentApi/stripeHooks", authorizer = false },
-]
-- Private - do not update this yet
+## Architecture
+
+- The public service roots are `app-api/public/ebayApi`, `marketingApi`,
+  `paymentApi`, and `userApi`. Each root is a separate container.
+- API Gateway route definitions are a reference for public paths, methods, and
+  authorization behavior. HTTP requests are forwarded to these services by an
+  ALB; do not add API Gateway infrastructure as part of this migration.
+- Use an Express router in each service root to adapt HTTP requests to the
+  existing Lambda event format and return the handler's status, headers, and
+  body to the caller.
+- Preserve handler logic and the `/opt/nodejs` layer imports. Existing calls
+  from public handlers to private Lambda jobs remain unchanged.
+- Private functions are internal jobs invoked through mechanisms such as SQS,
+  EventBridge, or existing service integrations. Do not migrate or otherwise
+  update them in this phase.
+- The ALB OIDC authentication action must supply the trusted
+  `x-amzn-oidc-identity` header. Map it to
+  `requestContext.authorizer.claims.sub` on authenticated routes. Never derive
+  this claim from a query parameter or an unverified `Authorization` header.
+  The identity header is unsigned: the ALB/auth layer must overwrite
+  client-supplied values, and services must only accept traffic through the
+  protected ALB path.
+- Keep each service's environment in its runtime `.env` file. Commit only
+  `.env.example` files; do not commit credentials or secrets.
+- Build images with `app-api/public/Dockerfile`, selecting the service root with
+  the `SERVICE_ROOT` build argument. Do not add cluster or deployment
+  configuration unless separately requested.
+
+## Public route map
+
+| Service root | Public path | Methods | Handler | Auth |
+| --- | --- | --- | --- | --- |
+| `userApi` | `/appuser/profile` | GET, POST, PUT, DELETE | `userApi/profile` | Required |
+| `userApi` | `/appuser/subscription` | GET, POST, PUT, DELETE | `userApi/subscription` | Required |
+| `ebayApi` | `/ebayauth/token` | GET, DELETE | `ebayApi/auth/token` | Required |
+| `ebayApi` | `/ebayauth/callback` | GET | `ebayApi/auth/callback` | Not required |
+| `ebayApi` | `/ebayauth/state` | POST | `ebayApi/auth/state` | Required |
+| `ebayApi` | `/ebayapi/user/details` | GET | `ebayApi/user/getUserDetails` | Required |
+| `ebayApi` | `/ebayapi/metadata/{sites,root-categories,sub-categories,category-search,category-path,category-detail,category-validation,tree-metadata}` | GET | `ebayApi/metadata/getEbayData` | Required |
+| `ebayApi` | `/ebay-pn/hk1-001` | POST | `ebayApi/metadata/getEbayData` | Not required |
+| `ebayApi` | `/ebay-pn/hk{2,3,4,5}-001` | POST | `ebayApi/ebayPlatformNotificationHook` | Not required |
+| `paymentApi` | `/payments/stripeSession` | GET, POST | `paymentApi/stripeSessionManager` | Required |
+| `paymentApi` | `/stripehooks/all` | POST | `paymentApi/stripeHooks` | Not required |
+| `marketingApi` | `/marketing/registerInterest` | POST | `marketingApi/registerInterest` | Not required |
+
+`/marketing/registerInterest` is the current service route; verify it against
+the existing API Gateway mapping before cutover because that mapping was not
+included in the original route list. The supplied route map sends POST
+`/ebay-pn/hk1-001` to a handler that currently accepts only GET, and includes
+DELETE for `userApi/subscription` although its handler currently accepts only
+GET, POST, and PUT. Preserve these existing handler behaviors rather than
+silently changing business logic.

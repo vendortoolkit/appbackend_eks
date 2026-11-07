@@ -1,0 +1,13 @@
+{
+  "name": "user-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env index.mjs",
+    "test": "node --test ../shared/lambdaAdapter.test.mjs"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

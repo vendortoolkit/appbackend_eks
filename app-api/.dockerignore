@@ -1,0 +1,7 @@
+**/node_modules
+**/coverage
+**/.aws-sam
+**/.env
+**/.env.*
+!**/.env.example
+.git
